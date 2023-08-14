@@ -20,3 +20,77 @@ button,
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Testimonials */
+.feedback {
+    background: #f0f2f4;
+    height: 600px;
+    min-height: 600px;
+}
+
+.feedback h2 {
+    color: rgb(254, 65, 65);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+
+.feedback h3 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.feedback__content .item {
+    border-radius: 13px;
+    width: 100%;
+}
+
+
+.feedback__top i {
+    color: green;
+    font-size: 28px;
+}
+
+.feedback__top p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #666666cd;
+}
+
+.item .feedback__bottom .img-inside {
+    width: 70px;
+    height: 70px;
+}
+
+.feedback__child p:first-child {
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.feedback__child p:last-child {
+    color: #666666cd;
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot {
+    margin-top: 30px;
+    outline: none;
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot.active span,
+.feedback__content .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: green;
+    width: 30px;
+    height: 10px;
+    border: chocolate;
+}
+
+.feedback__content .owl-two.owl-carousel.owl-theme .owl-dots .owl-dot span {
+    border: none;
+}
