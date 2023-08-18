@@ -21,9 +21,80 @@ button,
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
+
+/* Sub */
+.subcribe {
+    max-width: 800px;
+}
+
+.container__sub {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Sub */
+.sub__top h3 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.sub__top p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #666666cd;
+}
+
+.sub__bottom {
+    display: flex;
+    justify-content: center;
+
+}
+
+.sub__bottom input {
+    height: 60px;
+    padding: 0px 20px;
+    flex-grow: 1;
+    background: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    outline: none;
+    margin-right: 15px;
+}
+
+.sub__bottom .form-control:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    border-color: green;
+}
+
+.sub__bottom button {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    border-radius: 10px;
+
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width:767px) {
+    .sub__bottom {
+        display: block;
+    }
+}
+
+@media screen and (max-width:667px) {
+    .sub__bottom {
+        display: block;
+    }
+}
+
+@media screen and (max-width:667px) {
+    .sub__bottom button {
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+    }
+}
