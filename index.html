@@ -50,12 +50,48 @@
     <!-- HomePage Plans -->
     <section></section>
     <!-- HomePage Pet Video -->
-    <section></section>
+    <section class="finest__nuttri py-5">
+      <div class="container">
+        <div class="finest__content text-center">
+          <div class="finest__top">
+            <h2>BETTER PET NUTRITION</h2>
+            <h3>The Finest Fresh Food And All Your Pet Needs.</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem
+              ipsum dolor sit amet elit consec tetur adipisi elit. Lorem ipsum
+              dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus
+              explicabo officia.
+            </p>
+          </div>
+          <div class="finest__bottom mt-5">
+            <div class="finest__position">
+              <img src="./picture/banner2.jpg" class="img-fluid" alt="" />
+              <div class="icon__inside">
+                <a href="" class="position__icon">
+                  <span class="video__icon">
+                    <span><i class="fa fa-play"></i></span>
+                  </span>
+                </a>
+                <a class="image-popup-vertical-fit" href="#" title="">
+                  <iframe
+                    src="https://vimeo.com/101587706"
+                    frameborder="0"
+                    allow="autoplay; fullcreen"
+                    allowfullscreen
+                  ></iframe>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- HomePage Testimonials -->
     <section></section>
     <!-- HomePage Subscribe -->
     <section class="subcribe text-center mx-auto">
-      <div class="container__sub pt-5 pb-5">
+      <div class="container pt-5 pb-5">
         <div class="sub__top">
           <h3>Stay Updated!</h3>
           <p class="mt-3">
@@ -75,9 +111,118 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+      <div class="footer__parent mt-5">
+        <div class="footer__top">
+          <div class="container">
+            <div class="footer__grid row">
+              <div class="col-md-6">
+                <h5 .class="footer-title">Contact information</h5>
+                <ul>
+                  <li>
+                    <p>
+                      <strong>Address </strong> : #135 block, Barnard St.
+                      Brooklyn, London 10036, UK
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Phone </strong> : <a href=""> +(12)234-11-24</a>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Email </strong
+                      ><a href=" example@mail.com"> : example@mail.com</a>
+                    </p>
+                  </li>
+                </ul>
+                <div class="footer__social">
+                  <ul class="social__icon">
+                    <li>
+                      <a href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-dribbble"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-google"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-6 col-sm-6 col-md-4">
+                    <h5 class="footer-title">Archives</h5>
+                    <ul>
+                      <li><a href="">December 2020</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-sm-6 col-md-4">
+                    <h5 class="footer-title">Categories</h5>
+                    <ul>
+                      <li><a href=""> Categories Animals</a></li>
+                      <li><a href="">Pets</a></li>
+                      <li><a href="">Pets care</a></li>
+                      <li><a href="">Uncategorized</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h5 class="footer-title">Meta</h5>
+                    <ul>
+                      <li><a href="">Log in</a></li>
+                      <li><a href="">Entries feed</a></li>
+                      <li><a href="">Comments feed</a></li>
+                      <li><a href="">WordPress.org</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom align-center mt-5">
+          <div class="container text-center py-4">
+            <p>
+              © 2023 All Rights Reserved by
+              <a href=""><span>W3Layouts</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- back to top -->
-    <script></script>
+    <div class="backToTop">
+      <a href="" class="cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up btn-success"></i>
+      </a>
+    </div>
+    <!-- Modal -->
+
+    <!-- Nav Right SideBar -->
+    <nav class="nav__right" id="nav__right">
+      <button class="toggler" id="toggler">
+        <i class="fa-solid fa-angles-right" id="iconRight"></i>
+      </button>
+      <ul class="menu" id="menu">
+        <li>
+          <a href=""><i class="fa fa-arrow-left"></i></a>
+          <p>Back</p>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-download"></i></a>
+          <p>Download</p>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-shopping-cart"></i></a>
+          <p>Buy</p>
+        </li>
+      </ul>
+    </nav>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -95,5 +240,58 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- Video -->
+    <script>
+      $(document).ready(function () {
+        $(".image-popup-vertical-fit").magnificPopup({
+          type: "image",
+          closeOnContentClick: true,
+          mainClass: "mfp-img-mobile",
+          image: {
+            verticalFit: true,
+          },
+        });
+
+        $(".image-popup-fit-width").magnificPopup({
+          type: "image",
+          closeOnContentClick: true,
+          image: {
+            verticalFit: false,
+          },
+        });
+
+        $(".image-popup-no-margins").magnificPopup({
+          type: "image",
+          closeOnContentClick: true,
+          closeBtnInside: false,
+          fixedContentPos: true,
+          mainClass: "mfp-no-margins mfp-with-zoom", // class to remove default margin from left and right side
+          image: {
+            verticalFit: true,
+          },
+          zoom: {
+            enabled: true,
+            duration: 300, // don't foget to change the duration also in CSS
+          },
+        });
+      });
+    </script>
+    <!-- navRight -->
+    <script>
+      $(document).ready(() => {
+        const nav = $("#nav__right");
+        const toggler = $("#toggler");
+        const menu = $("#menu");
+
+        toggler.click(() => {
+          const isVisible = nav.hasClass("hide");
+          nav.toggleClass("hide");
+        });
+      });
+    </script>
+    <!-- backToTop -->
+    <script src="./js/mainBackToTOp.js"></script>
+    <script src="./js/util.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
