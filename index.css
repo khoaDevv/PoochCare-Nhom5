@@ -49,9 +49,12 @@ body {
   text-align: left;
   background-color: #fff;
 }
-body button, .btn, body a {
+body button,
+.btn,
+body a {
   transition: 0.5s all;
-  -webkit-transition: 0.5s all;}
+  -webkit-transition: 0.5s all;
+}
 /* dark theme */
 .dark_theme {
   /* darkmode */
@@ -62,7 +65,7 @@ body button, .btn, body a {
 }
 /* Header */
 header.main-header {
-  background-color:#fff;
+  background-color: #fff;
   padding: 0px;
   height: 80px;
   display: grid;
@@ -71,21 +74,23 @@ header.main-header {
   text-align: center;
 }
 
+/* dark theme */
+
+.main-header.fixed-top.dark {
+  background-color: black;
+}
+
 .main-header .container {
-  position: relative;
-  margin: 0;
   padding: 0;
   justify-content: space-between;
   align-items: center;
 }
 .fixed-top {
-  
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
 }
-
 
 body a,
 button,
@@ -104,6 +109,12 @@ header .navbar-expand-lg .navbar-nav .nav-item .nav-link.active {
 .navbar-expand-lg .navbar-nav .nav-item.active {
   color: var(--primary);
 }
+
+/* dark theme */
+.main-header.fixed-top.dark .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  color: var(--white);
+}
+
 header .nav-item a::before {
   content: "";
   position: absolute;
@@ -151,7 +162,7 @@ header a:hover {
   padding: 0 10px;
 }
 li a.search-search {
-  background:rgba(147, 107, 232, 0.05);
+  background: rgba(147, 107, 232, 0.05);
   font-size: 16px;
   line-height: 25px;
   width: 45px;
@@ -239,32 +250,32 @@ header .dark__mode {
   }
 }
 /* dark theme */
-header #switch-mode{
+header #switch-mode {
   outline: none;
   border: none;
   background: none;
   cursor: pointer;
   display: inline-block;
-    position: relative;
-    width: 60px;
-    margin: 30px 0;
-    font-size: 18px;
+  position: relative;
+  width: 60px;
+  margin: 30px 0;
+  font-size: 18px;
 }
 
 /* dark mode */
-#icon{
-  width:30px ;
+#icon {
+  width: 30px;
   cursor: pointer;
 }
 
 /* carousel */
-.container{
+.container {
   max-width: 1144px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-.carousel-caption
-.carousel .carousel-indicators li {
+
+.carousel-caption .carousel .carousel-indicators li {
   box-sizing: content-box;
 
   -ms-flex: 0 1 auto;
@@ -332,8 +343,13 @@ header #switch-mode{
 
 /*  */
 section#about {
-  background-color: var(--bg-color);
+  background-color: #fff;
 }
+/* dark theme */
+section#about .dark {
+  background-color: #151515;
+}
+
 section .btn-white:hover {
   color: #189a46;
 }
@@ -429,7 +445,7 @@ p {
 }
 .carousel-item .image {
   width: 100%;
-  height:80%;
+  height: 80%;
 }
 
 .carousel-indicators {
@@ -493,7 +509,7 @@ section .carousel-indicators li:hover::before {
   .navbar-expand-lg .navbar-nav .nav-link {
     display: block;
   }
-  
+
   header .nav-item a:hover::before {
     width: 0;
   }
@@ -565,6 +581,9 @@ section .carousel-indicators li:hover::before {
   line-height: 48px;
   text-transform: capitalize;
 }
+.hny-title.dark {
+  color: #f8f9fa;
+}
 .mb-3,
 .my-3 {
   margin-bottom: 1rem !important;
@@ -576,7 +595,7 @@ section .carousel-indicators li:hover::before {
 a.read {
   font-size: 17px;
   padding: 0;
-  border-bottom: 2px solid #189A46;);
+  border-bottom: 2px solid #189a46;
   color: #000c04;
   transition: 0.3s ease-in-out;
   font-weight: 600;
@@ -590,20 +609,29 @@ a.read {
   max-width: 700px;
   text-align: center;
 }
-a.read:hover{
-  color: #189A46;
+a.read:hover {
+  color: #189a46;
 }
 /* start feathurs */
 .w3l-features {
-  background-color:rgba(147, 107, 232, 0.05);
+  background-color: rgba(147, 107, 232, 0.05);
+}
+.w3l-features.dark {
+  background-color: #151515;
 }
 .w3l-features .area-box {
   padding: 40px 30px;
   transition: all 0.5s ease 0s;
   border-radius: 10px;
-  background-color:#fff;
+  background-color: #fff;
   position: relative;
 }
+/* dark theme */
+
+.w3l-features .area-box.dark {
+  background-color: var(--bg-color);
+}
+
 .grids-feature {
   margin-bottom: 30px;
 }
@@ -611,11 +639,11 @@ a.read:hover{
   background: rgba(147, 107, 232, 0.05);
 }
 .w3l-features .icon span.fa {
-  color: #189A46;
+  color: #189a46;
   font-size: 30px;
 }
-.fa-solid{
-  color: #189A46;
+.fa-solid {
+  color: #189a46;
   font-size: 30px;
 }
 .w3l-features .area-box h4 a {
@@ -627,5 +655,21 @@ a.read:hover{
   color: #000c04;
 }
 .w3l-features .area-box h4 a:hover {
-  color:#189A46;
+  color: #189a46;
+}
+
+/* toggle */
+
+.main-header.fixed-top.dark .btn.toggle span.sun {
+  display: none;
+}
+.main-header.fixed-top.dark .btn.toggle span.dark {
+  display: block;
+}
+
+.main-header.fixed-top .btn.toggle span.sun {
+  display: block;
+}
+.main-header.fixed-top .btn.toggle span.dark {
+  display: none;
 }

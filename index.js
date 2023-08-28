@@ -9,3 +9,8 @@ btn.onclick = function () {
   const addClass = document.getElementById("darl_mode");
   document.body.classList.toggle("dark_theme");
 };
+
+function darkTheme (){
+
+ document.getElementById('site-header').classList.toggle('dark')
+}
