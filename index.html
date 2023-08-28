@@ -7,10 +7,7 @@
       href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&amp;display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/css/style-liberty.css"
-      rel="stylesheet"
-    />
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -37,11 +34,17 @@
      -->
     <link rel="stylesheet" href="./index.css" />
   </head>
-  <body>
-    <header>
+  <body class="dark">
+    <header
+      id="site-header"
+      style="transition: all 0.5s"
+      class="main-header fixed-top"
+    >
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#" ;>Pooh Care</a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#" style="color: #189a46" ;
+            >Pooch Care</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -57,7 +60,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#"
+                <a class="nav-link active" href="#"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -97,51 +100,20 @@
                 <a href="#search" class="btn search-search">
                   <span class="fa fa-search" aria-hidden="true"></span>
                 </a>
+                
+                 
                 <!-- search search-popup -->
-                <div id="search" class="pop-overlay">
-                  <div class="search-popup">
-                    <form
-                      action="https://wp.w3layouts.com/poochcare/"
-                      method="get"
-                      class="d-sm-flex"
-                    >
-                      <input
-                        type="search"
-                        name="s"
-                        placeholder="Search.."
-                        required="required"
-                        autofocus=""
-                      />
-
-                      <button type="submit">Search</button>
-                      <a class="close" href="#url">×</a>
-                    </form>
-                  </div>
-                </div>
-                <!-- /search search-popup -->
-              </li>
-            </ul>
-          </div>
+                
           <!-- dark light theme -->
-          <div class="mobile-position DarkandLight">
-            <nav class="navigation">
-              <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                  <input type="checkbox" id="checkbox" />
-                  <div class="mode-container">
-                    <i class="gg-sun"></i>
-                    <i class="gg-moon"></i>
-                  </div>
-                </label>
-              </div>
-            </nav>
-          </div>
+       
           <!-- switch -->
         </nav>
       </div>
     </header>
-    <section class="banner">
+    <!-- carousel -->
+    <section id="banner">
       <div class="bd-example">
+        <!-- data-ride="carousel" -->
         <div
           id="carouselExampleCaptions"
           class="carousel slide"
@@ -152,22 +124,30 @@
               data-target="#carouselExampleCaptions"
               data-slide-to="0"
               class="owl-dot avtive"
-            ></li>
+            >
+              <span></span>
+            </li>
             <li
               data-target="#carouselExampleCaptions"
               data-slide-to="1"
               class="owl-dot"
-            ></li>
+            >
+              <span></span>
+            </li>
             <li
               data-target="#carouselExampleCaptions"
               data-slide-to="2"
               class="owl-dot"
-            ></li>
+            >
+              <span></span>
+            </li>
             <li
               data-target="#carouselExampleCaptions"
               data-slide-to="3"
               class="owl-dot"
-            ></li>
+            >
+              <span></span>
+            </li>
           </ol>
 
           <div class="carousel-inner">
@@ -194,7 +174,7 @@
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption ml-lg-auto">
+              <div class="carousel-caption text-center">
                 <h5>Quality Thing For Loving Pets</h5>
                 <p>Keep Your Pet Smiling</p>
                 <a
@@ -232,7 +212,7 @@
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption ml-lg-auto">
+              <div class="carousel-caption text-center">
                 <h5>Delivering happiness for Pets</h5>
                 <p>We Help Your Projects</p>
                 <a
@@ -279,7 +259,7 @@
           <div class="col-lg-4 col-sm-6 grids-feature">
             <div class="area-box">
               <div class="icon">
-                <span class="fa fa-snowflake-o"></span>
+                <i class="fa-solid fa-snowflake"></i>
               </div>
               <h4><a href="#url" class="title-head"> Dog Walking</a></h4>
               <p>
@@ -379,5 +359,13 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- poper -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- myjs -->
+    <script src="./index.js"></script>
   </body>
 </html>
