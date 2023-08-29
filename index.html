@@ -41,7 +41,7 @@
   <body>
     <!-- Header -->
   </head>
-  <body class="dark">
+  <body class="dark-mode">
     <header
       id="site-header"
       style="transition: all 0.5s"
@@ -109,9 +109,9 @@
                 </a>
               </li>
               <li class="nav-item HeaderSearch" title="Search">
-                <a onclick="darkTheme()" class="btn toggle">
-                  <span class="fa-regular fa-moon dark" aria-hidden="true"></span>
-                  <span class="fa-regular fa-sun sun" aria-hidden="true"></span>
+                <a onclick="darkTheme()" class="btn toggle" id="change-icon">
+                  <span class="fa-regular fa-moon dark" id="dark-icon"aria-hidden="true"></span>
+                  <span class="fa-regular fa-sun sun"id="sun-icon" atl="sun-icon" aria-hidden="true"></span>
                   
                 </a>
               </li>
@@ -520,7 +520,9 @@
       </div>
     </section>
     <!-- HomePage Pet Video -->
-    <section class="finest__nuttri py-5">
+    <section class="finest__nuttri py-5"
+    
+   >
       <div class="container">
         <div class="finest__content text-center">
           <div class="finest__top">
@@ -590,7 +592,7 @@
               </div>
             </div>
           </div>
-          <div class="item bg-white mt-2">
+          <div class="item mt-2">
             <div class="parent p-4">
               <div class="feedback__top pt-4 pr-4 pl-4">
                 <p>
@@ -612,7 +614,7 @@
               </div>
             </div>
           </div>
-          <div class="item bg-white mt-2">
+          <div class="item mt-2">
             <div class="parent p-4">
               <div class="feedback__top pt-4 pr-4 pl-4">
                 <p>
@@ -635,7 +637,7 @@
               </div>
             </div>
           </div>
-          <div class="item bg-white mt-2">
+          <div class="item mt-2">
             <div class="parent p-4">
               <div class="feedback__top pt-4 pr-4 pl-4">
                 <p>
@@ -657,7 +659,7 @@
               </div>
             </div>
           </div>
-          <div class="item bg-white mt-2">
+          <div class="item mt-2">
             <div class="parent p-4">
               <div class="feedback__top pt-4 pr-4 pl-4">
                 <p>
@@ -679,7 +681,7 @@
               </div>
             </div>
           </div>
-          <div class="item bg-white mt-2">
+          <div class="item mt-2">
             <div class="parent p-4">
               <div class="feedback__top pt-4 pr-4 pl-4">
                 <p>
@@ -708,9 +710,9 @@
   </div>
 </section>
    <!-- HomePage Subscribe -->
-    <section class="subcribe text-center" id="side-sub"
+    <section class="subcribe text-center main-sub fixed-sub" id="side-sub"
     style="transition: all 0.5s"
-    class="main-header fixed-top">
+   >
       <div class="container pt-5 pb-5">
         <div class="subcribe__parent">
           <div class="sub__top">
