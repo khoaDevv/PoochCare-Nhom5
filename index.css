@@ -330,8 +330,8 @@ header #switch-mode {
 }
 
 /* dark mode */
-#icon {
-  width: 30px;
+.fa-2x {
+  font-size: 23px;
   cursor: pointer;
 }
 
